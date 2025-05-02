@@ -1,4 +1,3 @@
-import Title from "@/components/common/title";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { IProject } from "@/constants";
