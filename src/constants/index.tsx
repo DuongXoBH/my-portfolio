@@ -43,16 +43,16 @@ export const PROJECTS: IProject[] = [
     code: "https://github.com/DuongXoBH/admin-dashboard.git",
   },
   {
-    img: "/home/project-2.jpg",
-    title: "Project Two",
+    img: "https://res.cloudinary.com/dtg8bciwm/image/upload/v1750324082/images/image/lchvl6ctyi01sk5g08pu.jpg",
+    title: "Task Management Website",
     description:
-      "A modern fashion e-commerce website that allows users to browse products, add items to their cart, and place orders online. The interface is fully responsive and optimized for both desktop and mobile devices. Administrators can manage products through a dedicated dashboard, including features to add, edit, or delete items.",
+      "A task management website that allows users to create, update, and delete tasks. The interface is fully responsive and optimized for both desktop and mobile devices. Administrators can manage users and their tasks through a dedicated dashboard.",
     tech: {
-      frontend: "ReactJS, NextJS, TailwindCSS",
+      frontend: "ReactJS, Vite, TailwindCSS",
       backend: "NodeJS, ExpressJS, MongoDB",
     },
-    href: "#",
-    code: "#",
+    href: "https://task-manager-five-ochre.vercel.app/",
+    code: "https://github.com/DuongXoBH/task-manager.git",
   },
   {
     img: "/home/project-3.jpg",

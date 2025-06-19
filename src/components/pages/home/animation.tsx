@@ -13,7 +13,7 @@ export default function FlowerEffect() {
   }, []);
 
   const points = [];
-  const petalCount = 6;
+  const petalCount = 7;
   const pointCount = 100;
   const size = 120;
   for (let i = 0; i < pointCount; i++) {

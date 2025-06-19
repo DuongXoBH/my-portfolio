@@ -18,15 +18,9 @@ export default {
           "83.3%": { top: "100%", left: "0%", width: "8px", height: "8px" },
           "100%": { top: "0%", left: "0%", width: "8px", height: "8px" },
         },
-        "pulse-flower": {
-          "0%, 100%": { transform: "scale(1)" },
-          "50%": { transform: "scale(1.4)" }, // hiệu ứng tách ra
-        },
       },
       animation: {
         "border-walk": "border-walk 6s ease infinite",
-        "spin-slow": "spin 10s linear infinite",
-        "pulse-flower": "pulse-flower 2s ease-in-out infinite",
       },
 
       colors: {

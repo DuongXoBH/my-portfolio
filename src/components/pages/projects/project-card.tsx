@@ -1,7 +1,6 @@
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { IProject } from "@/constants";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function ProjectCard({ project }: { project: IProject }) {
@@ -11,12 +10,13 @@ export default function ProjectCard({ project }: { project: IProject }) {
         ratio={16 / 9}
         className="bg-muted rounded-lg overflow-hidden"
       >
-        <Image
-          src={project.img}
-          alt={project.title}
-          fill
-          className="rounded-lg object-cover"
-        />
+        <Link href={project.href} target="_blank">
+          <img
+            src={project.img}
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+        </Link>
       </AspectRatio>
 
       <div className="flex flex-col px-4 gap-5 ">
@@ -47,10 +47,14 @@ export default function ProjectCard({ project }: { project: IProject }) {
         </div>
         <div className="mb-8 flex justify-between items-center">
           <Button variant={"default"}>
-            <Link href={project.href}>View Project</Link>
+            <Link target="_blank" href={project.href}>
+              View Project
+            </Link>
           </Button>
           <Button variant={"default"}>
-            <Link href={project.code}>View Code</Link>
+            <Link target="_blank" href={project.code}>
+              View Code
+            </Link>
           </Button>
         </div>
       </div>
